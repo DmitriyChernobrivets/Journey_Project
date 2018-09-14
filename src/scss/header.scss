@@ -1,0 +1,119 @@
+.head_menu-list {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    @media (min-width: 1024px) {
+        flex-wrap: nowrap;
+    }
+}
+.head_menu-item {
+
+    font-size: calculateRem(20px);
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 10px 5px;
+    &:hover .head_menu-link{
+        color: $dark-blue;
+    }
+    @media (min-width: 768px) {
+        font-size: calculateRem(24px);
+    }
+}
+.head_menu-item > a {
+    color: $color-white;
+    font-family: PathwayGothic, Arial, sans-serif;
+}
+.head_menu-item:nth-child(1) {
+    order: 1;
+    @media (min-width: 769px) {
+        order: 5;
+        margin: 0  0 70px 0 !important;
+}
+}
+.head_menu-item:nth-child(2) {
+    order: 2;
+}
+.head_menu-item:nth-child(3) {
+    order: 3;
+
+}
+.head_menu-item:nth-child(4) {
+    order: 4;
+}
+.head_menu-item:nth-child(5) {
+    order: 5;
+}
+.head_menu-item:nth-child(6) {
+    order: 6;
+}
+.head_menu-item:nth-child(7) {
+    order: 7;
+}
+#main-link {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: calculateRem(70px);
+
+}
+#main-link > a {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 43px 20px;
+    font-size: 33px;
+    font-family: PathwayGothic, Arial, sans-serif;
+    text-transform: uppercase;
+    color: $dark-blue;
+    
+}
+
+@media (max-width: 768px) {
+    #main-link {
+            flex-basis: 100%
+}
+    .head_menu-item {
+            flex-basis: 30%;
+            text-align: center;
+    }
+
+}
+
+.submenu {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,8%);
+    display: none;
+    
+}
+.submenu_list {
+    background-color: $color-white;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 2px;
+    text-align: center;
+    &:nth-child(1)::before {
+        display: block;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: $color-white;
+        position: absolute;
+        top: -4px;
+        
+        left: 50%;
+        transform: rotate(45deg);
+    }
+}
+
+.submenu_list > a {
+    color: $dark-blue;
+}
+#submenu_main {
+    position: relative;
+    &:hover .submenu {
+        display: block;
+        z-index: 100;
+    }
+}

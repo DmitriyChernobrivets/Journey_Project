@@ -1,0 +1,9 @@
+$dark-blue: #43506c;
+$color-white: #f2f2f3; 
+$footer-bg: #30455b;
+$color-yellow: #e4b263;
+$color-blue: #38afe5;
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
