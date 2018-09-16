@@ -200,7 +200,10 @@ img {
 }
 
 @media (min-width: 1025px) {
-
+  .tabs-letter {
+    display: flex;
+    justify-content: space-between;
+  }
   .destinations_first:nth-child(1) {
     width: 30%;
   }
@@ -300,11 +303,14 @@ main>.wrapper {
         background-color: #f7f2f2;
     }
     &_main {
-        padding: 57px 32px;
+        padding: 37px 32px;
         border: 1px solid #dedbdb;
         @media (min-width: 769px) {
             display: flex;
             justify-content: space-between;
+        }
+        @media (min-width: 1025px) {
+          flex-direction: column;
         }
     }
     &_email {
@@ -329,6 +335,10 @@ main>.wrapper {
         @media (min-width: 769px) {
             width: 50%;
         }
+        @media (min-width: 1025px) {
+          display: inline-block;
+          width: 100%;
+        }
         & > li {
             
             flex-basis: 40%;
@@ -344,9 +354,10 @@ main>.wrapper {
                 height: 15px;
                 background-color: blue;
                 border-radius: 50%;
+                background-image: url(../img/sprite/sprite.svg#ARROW_LEFT);
             }
             &:not(:last-child) {
-                margin-bottom: 20px;
+                margin-bottom: 17px;
             }
         }
     }
