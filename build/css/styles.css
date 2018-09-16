@@ -15,10 +15,6 @@ html {
   /* 2 */
 }
 
-body {
-  margin: 0;
-}
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -165,8 +161,6 @@ legend {
 }
 
 ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -609,6 +603,142 @@ main > .wrapper {
   background-color: #fff;
 }
 
+.tabs_list {
+  border: 1px solid #dedbdb;
+  padding: 32px 24px;
+}
+
+.tabs_img {
+  background-image: url("../img/Layer 28.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 110px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.tabs_head {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid black;
+}
+
+.tabs_item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.tabs_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: unset;
+  -webkit-align-items: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+
+.tabs_content > button {
+  background-color: #fcf6f7;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 3px 10px;
+  height: 35px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.tabs_content > h2 {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #43506c;
+}
+
+.tabs_content > p {
+  color: #4e5050;
+  width: 70%;
+}
+
+.news_head {
+  font-size: 20px;
+  color: #43506c;
+  font-family: OpenSansCondest, Arial, Helvetica, sans-serif;
+  padding: 5px 60px;
+  background-color: #f7f2f2;
+}
+
+.news_main {
+  padding: 57px 32px;
+  border: 1px solid #dedbdb;
+}
+
+.news_email > p {
+  font-size: 15px;
+  color: #43506c;
+  font-family: OpenSansCondest, Arial, Helvetica, sans-serif;
+  margin-bottom: 22px;
+}
+
+.news_email > input[type='text'] {
+  border: 1px solid #dedbdb;
+  width: 100%;
+  padding: 4px 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.news_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.news_list > li {
+  -webkit-flex-basis: 40%;
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+  color: #43506c;
+  font-size: 12px;
+  position: relative;
+}
+
+.news_list > li:before {
+  position: absolute;
+  left: -25px;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.news_list > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .footer_top-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -769,6 +899,35 @@ footer .wrapper:nth-child(2) {
     display: block;
   }
 
+  .tabs_img {
+    width: 35%;
+  }
+
+  .tabs_item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .tabs_content {
+    -webkit-flex-basis: 63%;
+    -ms-flex-preferred-size: 63%;
+    flex-basis: 63%;
+  }
+
+  .tabs_content > button {
+    margin: 0 0 0 auto;
+  }
+
+  .tabs_content > p {
+    width: 100%;
+  }
+
   .footer_top-list {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
@@ -851,6 +1010,21 @@ footer .wrapper:nth-child(2) {
 
   .destinations_first:nth-child(2) {
     width: 48%;
+  }
+
+  .news_main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .news_list {
+    width: 50%;
   }
 }
 
