@@ -157,10 +157,12 @@ img {
   background-color: #fcf6f7;
   border-radius: 5px;
   padding: 3px 10px;
+  border: 1px solid #dedbdb;
   align-self: flex-end;
-
+  cursor: pointer;
   &:hover {
-    background-color: rgb(250, 209, 209);
+    background-color: #b6e1f5;
+    transition: .2s linear;
   }
 }
 
@@ -223,6 +225,9 @@ main>.wrapper {
 }
 
 .tabs {
+  @media (max-width: 1024px) {
+    margin-bottom: 70px;
+  }
   &_list {
     border: 1px solid #dedbdb;
     padding: 32px 24px;
@@ -240,10 +245,23 @@ main>.wrapper {
     }
   }
 
+  &_head-flex {
+    display: flex;
+  }
+
   &_head {
-    display: inline-block;
     padding: 7px 15px;
-    border: 1px solid black;
+    border: 1px solid #dedbdb;
+    font-family: PathwayGothic, Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    color: $dark-blue;
+    background-color: #fdf6f6;
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+    &:hover {
+      border-bottom: white;
+    }
   }
 
   &_item:not(:last-child) {
@@ -267,9 +285,15 @@ main>.wrapper {
     &>button {
       background-color: #fcf6f7;
       border-radius: 5px;
-      padding: 3px 10px;
-      height: 35px;
+      padding: 4px 10px;
+      transition: .2s linear;
       align-self: flex-end;
+      cursor: pointer;
+      border: 1px solid #dedbdb;
+      &:hover {
+        background-color: #b6e1f5;
+        transition: .2s linear;
+      }
       @media (min-width: 768px) {
         margin: 0 0 0 auto ;
     }
@@ -279,7 +303,7 @@ main>.wrapper {
       flex-basis: 100%;
       margin-bottom: 15px;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
+      font-size: 16px;
       color: $dark-blue;
 
     }
@@ -299,8 +323,8 @@ main>.wrapper {
         font-size: 20px;
         color: $dark-blue;
         font-family: OpenSansCondest, Arial, Helvetica, sans-serif;
-        padding: 5px 60px;
-        background-color: #f7f2f2;
+        padding: 8px 60px;
+        background-color: #fdf6f6;
     }
     &_main {
         padding: 37px 32px;
@@ -338,27 +362,26 @@ main>.wrapper {
         @media (min-width: 1025px) {
           display: inline-block;
           width: 100%;
+          
         }
-        & > li {
-            
-            flex-basis: 40%;
+        & > li { 
+            flex-basis: 43%;
             color: $dark-blue;
-            font-size: 12px;
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
             position: relative;
-            &:before {
-                position: absolute;
-                left: -25px;
-                content: "";
-                display: block;
-                width: 15px;
-                height: 15px;
-                background-color: blue;
-                border-radius: 50%;
-                background-image: url(../img/sprite/sprite.svg#ARROW_LEFT);
-            }
             &:not(:last-child) {
                 margin-bottom: 17px;
             }
         }
     }
+}
+.news_svg {
+  position: absolute;
+  background-color: #38afe5;
+  fill: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+  left: -20px;
 }

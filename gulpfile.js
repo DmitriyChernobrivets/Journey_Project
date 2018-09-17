@@ -73,12 +73,12 @@ gulp.task('scripts', () =>
 gulp.task('svg-sprite', () =>
   gulp
     .src('./src/img/sprite/*.svg')
-    .pipe(
-      svgstore({
-        inlineSvg: true,
-      }),
-    )
-    .pipe(rename('sprite.svg'))
+    // .pipe(
+    //   svgstore({
+    //     inlineSvg: true,
+    //   }),
+    // )
+    // .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('./build/img/sprite')),
 );
 
