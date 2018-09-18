@@ -7,3 +7,21 @@ $color-blue: #38afe5;
     $remSize: $size / 16px;
     @return #{$remSize}rem;
 }
+
+%btn {
+    background-color: #fcf6f7;
+    border-radius: 5px;
+    padding: 4px 10px;
+    transition: .2s linear;
+
+    cursor: pointer;
+    border: 1px solid #dedbdb;
+}
+%baseFont {
+    color: $dark-blue;
+    font-family: 'PathwayGothic', Arial, Helvetica, sans-serif;
+}
+%fontArial {
+    color: $dark-blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
