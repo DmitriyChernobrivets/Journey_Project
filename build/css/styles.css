@@ -588,7 +588,7 @@ img {
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/Layer 15.png");
+  background-image: url("../img/Layer15.png");
 }
 
 .destinations_first:hover .destinations_discription {
@@ -653,11 +653,11 @@ img {
 }
 
 .destinations_first:nth-child(2) {
-  background-image: url("../img/Layer 16.png");
+  background-image: url("../img/Layer16.png");
 }
 
 .destinations_first:nth-child(3) {
-  background-image: url("../img/Layer 17.png");
+  background-image: url("../img/Layer17.png");
 }
 
 .destination {
@@ -691,27 +691,27 @@ main > .wrapper {
 }
 
 .tabs_img.img1 {
-  background-image: url("../img/Layer 28.png");
+  background-image: url("../img/Layer28.png");
 }
 
 .tabs_img.img2 {
-  background-image: url("../img/Layer 95.png");
+  background-image: url("../img/Layer95.png");
 }
 
 .tabs_img.img3 {
-  background-image: url("../img/Layer 94.png");
+  background-image: url("../img/Layer94.png");
 }
 
 .tabs_img.img4 {
-  background-image: url("../img/Layer 93.png");
+  background-image: url("../img/Layer93.png");
 }
 
 .tabs_img.img5 {
-  background-image: url("../img/Layer 92.png");
+  background-image: url("../img/Layer91.png");
 }
 
 .tabs_img.img6 {
-  background-image: url("../img/Layer 28.png");
+  background-image: url("../img/Layer28.png");
 }
 
 .tabs_head-flex {

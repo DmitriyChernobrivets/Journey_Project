@@ -1,4 +1,5 @@
 'use strict';
+
 //======================   SLIDER   ==================================
 
 const next = document.querySelector('.js-right');
@@ -32,7 +33,6 @@ previous.onclick = function(){
 const tabsM = document.querySelector('.tabs_head-flex')
 const tabsH = document.querySelectorAll('.tabs_head')
 const tabsContent = document.querySelectorAll('.tabs_list')
-
 
 const tabsShow = (e) => {
     const target = e.target;

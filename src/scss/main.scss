@@ -126,7 +126,7 @@ img {
   height: 148px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../img/Layer 15.png');
+  background-image: url('../img/Layer15.png');
 
   &:hover .destinations_discription {
     opacity: 0.9;
@@ -185,11 +185,11 @@ img {
 }
 
 .destinations_first:nth-child(2) {
-  background-image: url('../img/Layer 16.png');
+  background-image: url('../img/Layer16.png');
 }
 
 .destinations_first:nth-child(3) {
-  background-image: url('../img/Layer 17.png');
+  background-image: url('../img/Layer17.png');
 
   @media (min-width: 769px) and (max-width: 1024px) {
     display: none;
@@ -265,22 +265,22 @@ main>.wrapper {
     width: 100%;
     margin-bottom: 15px;
     &.img1 {
-      background-image: url('../img/Layer 28.png');
+      background-image: url('../img/Layer28.png');
     }
     &.img2 {
-      background-image: url('../img/Layer 95.png');
+      background-image: url('../img/Layer95.png');
     }
     &.img3 {
-      background-image: url('../img/Layer 94.png');
+      background-image: url('../img/Layer94.png');
     }
     &.img4 {
-      background-image: url('../img/Layer 93.png');
+      background-image: url('../img/Layer93.png');
     }
     &.img5 {
-      background-image: url('../img/Layer 92.png');
+      background-image: url('../img/Layer91.png');
     }
     &.img6 {
-      background-image: url('../img/Layer 28.png');
+      background-image: url('../img/Layer28.png');
     }
     @media (min-width: 768px) {
         width: 35%;
