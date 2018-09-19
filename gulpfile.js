@@ -63,22 +63,22 @@ gulp.task('scripts', () =>
         presets: ['env'],
       }),
     )
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('./build/js'))
-    .pipe(uglify())
-    .pipe(rename('scripts.min.js'))
+    // .pipe(concat('scripts.js'))
+    // .pipe(gulp.dest('./build/js'))
+    // .pipe(uglify())
+    // .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('./build/js')),
 );
 
 gulp.task('svg-sprite', () =>
   gulp
     .src('./src/img/sprite/*.svg')
-    .pipe(
-      svgstore({
-        inlineSvg: true,
-      }),
-    )
-    .pipe(rename('sprite.svg'))
+    // .pipe(
+    //   svgstore({
+    //     inlineSvg: true,
+    //   }),
+    // )
+    // .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('./build/img/sprite')),
 );
 

@@ -1,0 +1,169 @@
+.btn {
+    @extend %btn;
+}
+
+.tours_main-head {
+    @extend %baseFont;
+    font-size: calculateRem(28px);
+    margin-bottom: calculateRem(45px);
+    @media (min-width: 1025px) {
+        font-size: calculateRem(32px);
+       
+    } 
+}
+.tours {
+    @media (min-width: 1025px) {
+
+        flex-basis: 70%;
+    }
+}
+.tours_flex{
+    @media (min-width: 769px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+   
+    .tours_content:nth-child(n+5) {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    
+.tours_content {
+display: flex;
+justify-content: space-between;
+margin-bottom: calculateRem(50px);
+    @media (min-width: 769px) {
+        flex-basis: 48%;
+    }
+   &-box {
+       flex-basis: 50%;
+   }
+    & > img {
+        flex-basis: 46%;
+        height: 155px;
+    }
+    &-box .head {
+        @extend %fontArial;
+        font-size: calculateRem(16px);
+        margin-bottom: calculateRem(18px);
+    }
+    &-box .discription {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: calculateRem(14px);
+        margin-bottom: calculateRem(12px);
+    }
+    &-box .price {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: calculateRem(18px);
+        text-transform: uppercase;
+        color: $color-blue;
+        margin-bottom: calculateRem(15px);
+    }
+}
+}
+.tours_forms {
+    @media (min-width: 769px) {
+        flex-basis: 28%;
+    }
+}
+.tours_select-form {
+    
+    text-align: center;
+    @media (min-width: 769px) {
+        text-align: left;
+    }
+    .head {
+        @extend %baseFont;
+        font-size: calculateRem(28px);
+        align-self: flex-start;
+        margin-bottom: calculateRem(40px);
+        text-align: left;
+        @media (min-width: 1025px) {
+            font-size: calculateRem(32px);
+           
+        } 
+    }
+    
+    .select-box {
+
+        & > select {
+            padding: 5px 10px;
+            margin-bottom: calculateRem(57px);
+            background-color: #fcfafa;
+            width: 70%;
+        }
+        .discription {
+            margin-bottom: calculateRem(11px);
+            font-size: calculateRem(10px);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btn {
+            @extend %btn;
+            display: block;
+            margin: 0 auto;
+            @media (min-width: 769px) {
+                margin: 0;
+            }
+        }
+    }
+    
+    
+}
+.form_control {
+    @media (min-width: 769px) {
+        flex-basis: 70%;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (min-width: 1025px) {
+            display: block;
+           
+        }    
+        .select-box {
+            flex-basis: 47%;
+            margin-bottom: calculateRem(25px);
+            & > select {
+                width: 100%;
+                padding: calculateRem(5px);
+                background-color: #fcfafa;
+            }
+        }
+    }
+    .head {
+        @extend %baseFont;
+        font-size: calculateRem(28px);
+        @media (min-width: 1025px) {
+            font-size: calculateRem(32px);
+           
+        } 
+        margin-bottom: calculateRem(45px);
+    }
+    .Operators {
+        font-size: calculateRem(10px);
+        font-family: Arial, Helvetica, sans-serif;
+        color: $color-blue;
+        margin-bottom: calculateRem(12px);
+    }
+}
+.forms_flex-main {
+    @media (min-width: 769px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media (min-width: 1025px) {
+        flex-direction: column;
+        flex-basis: 27%;
+        align-items: unset;
+    }
+}
+.flex_main {
+    @media (min-width: 1025px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
