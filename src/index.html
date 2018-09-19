@@ -25,7 +25,7 @@
     <div class="wrapper">
       <ul class="head_menu-list">
         <li class="head_menu-item" id="main-link"><a href="index.html" class="head_menu-link">Journey</a></li>
-        <li class="head_menu-item"><a href="#" class="head_menu-link">Home</a></li>
+        <li class="head_menu-item"><a href="index.html" class="head_menu-link">Home</a></li>
         <li class="head_menu-item" id="submenu_main"><a href="#" class="head_menu-link">About</a>
           <ul class="submenu">
             <li class="submenu_list" id=""><a href="#">item1</a></li>
@@ -36,7 +36,7 @@
         <li class="head_menu-item"><a href="gallery.html" class="head_menu-link">Gallery</a></li>
         <li class="head_menu-item"><a href="tours.html" class="head_menu-link">Tours</a></li>
         <li class="head_menu-item"><a href="#" class="head_menu-link">Blog</a></li>
-        <li class="head_menu-item"><a href="contacts.html" class="head_menu-link">Contacts</a></li>
+        <li class="head_menu-item"><a href="#" class="head_menu-link">Contacts</a></li>
       </ul>
     </div>
   </header>
@@ -46,17 +46,21 @@
   <main>
     <div class="wrapper">
       <div class="boat-slider">
-        <img class="slider_img" src="img/Layer 6.png" alt="boat">
+        <div class="slide_img-box">
+          <img class="slider_img show" src="img/Layer 6.png" alt="boat">
+          <img class="slider_img" src="img/Layer 53.png" alt="boat">
+          <img class="slider_img" src="img/Layer 52.png" alt="boat">
+        </div>
         <div class="slider_disc-block">
           <p class="slider_discription-t">THERE ARE PLANTY OF PLACES</p>
           <p class="slider_discription-b">THAT ARE WORTH SEEING</p>
         </div>
-        <button class="slider_btn right">
+        <button class="slider_btn right js-right">
           <svg class="slider_svg">
             <use href="img/sprite/sprite.svg#icon-circle-right"></use>
           </svg>
         </button>
-        <button class="slider_btn left">
+        <button class="slider_btn left js-left">
           <svg class="slider_svg">
             <use href="img/sprite/sprite.svg#icon-circle-left"></use>
           </svg>
@@ -97,29 +101,79 @@
             <div class="tabs_head">HOT DEALS</div>
             <div class="tabs_head">ALL INCLUSIVE</div>
           </div>
-          <ul class="tabs_list">
+          <ul class="tabs_list  tabs-show">
             <li class="tabs_item">
-              <div class="tabs_img"></div>
+              <div class="tabs_img img1"></div>
               <div class="tabs_content">
-                <h2>Lorem ipsum dolor sit.</h2>
+                <h2>TAB#1</h2>
                 <p>
                   Lorem ipsum dolor assdadasdasdasdadsi asdasd asd a ad assdad adad ada dasd asd adadasdasda asdas asd
                   ad ad asd ad asd asd asdas as dads adat amet consectetur adipisicing elit. Quo non adipisci corporis
-                  quibusdam recusandae saepe sequi iure debitis animi. Dignissimos architecto quisquam incidunt
-                  similique explicabo.
+                  quibusdam recusandae saepe sequi iure debitis animi. 
                 </p>
                 <button class="btn">Details</button>
               </div>
             </li>
             <li class="tabs_item">
-              <div class="tabs_img"></div>
+              <div class="tabs_img img2"></div>
               <div class="tabs_content">
                 <h2>Lorem ipsum dolor sit.</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur assdadasdasdasdadsi asdasd asd a ad assdad adad ada dasd asd
                   adadasdasda asdas asd ad ad asd ad asd asd asdas as dads adaadipisicing elit. Quo non adipisci
-                  corporis quibusdam recusandae saepe sequi iure debitis animi. Dignissimos architecto quisquam
-                  incidunt similique explicabo.
+                  corporis quibusdam recusandae saepe sequi iure debitis animi. 
+                </p>
+                <button class="btn">Details</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="tabs_list tabs-hide">
+            <li class="tabs_item">
+              <div class="tabs_img img3"></div>
+              <div class="tabs_content">
+                <h2>TAB#2</h2>
+                <p>
+                  Lorem ipsum dolor assdadasdasdasdadsi asdasd asd a ad assdad adad ada dasd asd adadasdasda asdas asd
+                  ad ad asd ad asd asd asdas as dads adat amet consectetur adipisicing elit. Quo non adipisci corporis
+                  quibusdam recusandae saepe sequi iure debitis animi. 
+                </p>
+                <button class="btn">Details</button>
+              </div>
+            </li>
+            <li class="tabs_item">
+              <div class="tabs_img img4"></div>
+              <div class="tabs_content">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur assdadasdasdasdadsi asdasd asd a ad assdad adad ada dasd asd
+                  adadasdasda asdas asd ad ad asd ad asd asd asdas as dads adaadipisicing elit. Quo non adipisci
+                  corporis quibusdam recusandae saepe sequi iure debitis animi. 
+                </p>
+                <button class="btn">Details</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="tabs_list tabs-hide">
+            <li class="tabs_item">
+              <div class="tabs_img img5"></div>
+              <div class="tabs_content">
+                <h2>TAB#3</h2>
+                <p>
+                  Lorem ipsum dolor assdadasdasdasdadsi asdasd asd a ad assdad adad ada dasd asd adadasdasda asdas asd
+                  ad ad asd ad asd asd asdas as dads adat amet consectetur adipisicing elit. Quo non adipisci corporis
+                  quibusdam recusandae saepe sequi iure debitis animi. 
+                </p>
+                <button class="btn">Details</button>
+              </div>
+            </li>
+            <li class="tabs_item">
+              <div class="tabs_img img6"></div>
+              <div class="tabs_content">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur assdadasdasdasdadsi asdasd asd a ad assdad adad ada dasd asd
+                  adadasdasda asdas asd ad ad asd ad asd asd asdas as dads adaadipisicing elit. Quo non adipisci
+                  corporis quibusdam recusandae saepe sequi iure debitis animi
                 </p>
                 <button class="btn">Details</button>
               </div>
@@ -236,6 +290,7 @@
       <p class="copyright">Journey &#9426 2013 | Privacy Policy | Website designed by Dmitriy</p>
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

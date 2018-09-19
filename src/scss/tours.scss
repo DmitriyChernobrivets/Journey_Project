@@ -29,6 +29,7 @@
             display: none;
         }
     }
+    
 .tours_content {
 display: flex;
 justify-content: space-between;
@@ -40,7 +41,7 @@ margin-bottom: calculateRem(50px);
        flex-basis: 50%;
    }
     & > img {
-        flex-basis: 45%;
+        flex-basis: 46%;
         height: 155px;
     }
     &-box .head {

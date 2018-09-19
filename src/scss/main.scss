@@ -10,14 +10,32 @@ main>.wrapper {
   margin: 0 auto calculateRem(80px) 0;
 }
 
+.show {
+  opacity: 1 !important;
+  transition: .3s linear;
+}
 img {
   width: 100%;
   display: block;
+  
 }
-
+.slide_img-box {
+  height: 260px;
+  & > img {
+    position: absolute;
+    opacity: 0;
+    transition: .3s linear;
+  }
+  @media (min-width:768px) {
+    height: 452px;
+  }
+  @media (min-width:1024px) {
+    height: 594px;
+  }
+  width: 100%;
+}
 .slider_disc-block {
   position: absolute;
-
   left: 50%;
   transform: translate(-15%, -70%);
   width: 80%;
@@ -38,7 +56,7 @@ img {
     background-color: $color-white;
   }
 
-  &>p:last-child {
+  & > p:last-child {
     font-size: 15px;
     background-color: $color-blue;
     color: $color-white;
@@ -223,7 +241,12 @@ img {
 main>.wrapper {
   background-color: #fff;
 }
-
+.tabs-hide {
+  display: none;
+}
+.tabs-show {
+  display: block !important;
+}
 .tabs {
   @media (max-width: 1024px) {
     margin-bottom: 70px;
@@ -231,18 +254,38 @@ main>.wrapper {
   &_list {
     border: 1px solid #dedbdb;
     padding: 32px 24px;
+    // display: none;
   }
 
   &_img {
-    background-image: url('../img/Layer 28.png');
+    
     background-repeat: no-repeat;
     background-size: cover;
     height: 110px;
     width: 100%;
     margin-bottom: 15px;
+    &.img1 {
+      background-image: url('../img/Layer 28.png');
+    }
+    &.img2 {
+      background-image: url('../img/Layer 95.png');
+    }
+    &.img3 {
+      background-image: url('../img/Layer 94.png');
+    }
+    &.img4 {
+      background-image: url('../img/Layer 93.png');
+    }
+    &.img5 {
+      background-image: url('../img/Layer 92.png');
+    }
+    &.img6 {
+      background-image: url('../img/Layer 28.png');
+    }
     @media (min-width: 768px) {
         width: 35%;
     }
+  
   }
 
   &_head-flex {
@@ -256,11 +299,24 @@ main>.wrapper {
     font-size: 21px;
     color: $dark-blue;
     background-color: #fdf6f6;
+    cursor: pointer;
+    position: relative;
     @media (max-width: 1024px) {
       font-size: 16px;
     }
-    &:hover {
-      border-bottom: white;
+    &:hover::after {
+      display: block;
+    }
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      content: "";
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: rgb(255, 253, 253);
+      display: none;
     }
   }
 
@@ -312,6 +368,7 @@ main>.wrapper {
     }
   }
 }
+
 
 .news {
     &_head {

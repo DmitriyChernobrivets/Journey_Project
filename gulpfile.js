@@ -63,10 +63,10 @@ gulp.task('scripts', () =>
         presets: ['env'],
       }),
     )
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('./build/js'))
-    .pipe(uglify())
-    .pipe(rename('scripts.min.js'))
+    // .pipe(concat('scripts.js'))
+    // .pipe(gulp.dest('./build/js'))
+    // .pipe(uglify())
+    // .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('./build/js')),
 );
 
