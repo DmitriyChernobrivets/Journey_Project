@@ -25,6 +25,12 @@ img {
     position: absolute;
     opacity: 0;
     transition: .3s linear;
+    @media (max-width: 480px) {
+      height: 220px;
+    }
+  }
+  @media (max-width: 480px) {
+    height: 220px;
   }
   @media (min-width:768px) {
     height: 452px;
@@ -246,24 +252,25 @@ main>.wrapper {
 }
 .tabs-show {
   display: block !important;
+ 
+
 }
 .tabs {
   @media (max-width: 1024px) {
-    margin-bottom: 70px;
+    margin-bottom: calculateRem(70px);
   }
   &_list {
     border: 1px solid #dedbdb;
-    padding: 32px 24px;
-    // display: none;
+    padding: calculateRem(32px) calculateRem(24px);
   }
 
   &_img {
     
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110px;
+    height: calculateRem(110px);
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: calculateRem(15px);
     &.img1 {
       background-image: url('../img/Layer28.png');
     }
@@ -285,43 +292,30 @@ main>.wrapper {
     @media (min-width: 768px) {
         width: 35%;
     }
-  
-  }
 
+  }
   &_head-flex {
     display: flex;
   }
 
   &_head {
-    padding: 7px 15px;
+    padding: calculateRem(7px) calculateRem(15px);
     border: 1px solid #dedbdb;
+    border-bottom: none;
     font-family: PathwayGothic, Arial, Helvetica, sans-serif;
-    font-size: 21px;
+    font-size: calculateRem(21px);
     color: $dark-blue;
     background-color: #fdf6f6;
     cursor: pointer;
     position: relative;
     @media (max-width: 1024px) {
-      font-size: 16px;
+      font-size: calculateRem(16px);
     }
-    &:hover::after {
-      display: block;
-    }
-    &:after {
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      content: "";
-      display: block;
-      height: 3px;
-      width: 100%;
-      background-color: rgb(255, 253, 253);
-      display: none;
-    }
+
   }
 
   &_item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: calculateRem(32px);
     
   }
   &_item {
@@ -352,9 +346,9 @@ main>.wrapper {
 
     &>h2 {
       flex-basis: 100%;
-      margin-bottom: 15px;
+      margin-bottom: calculateRem(15px);
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
+      font-size: calculateRem(16px);
       color: $dark-blue;
 
     }
@@ -372,14 +366,14 @@ main>.wrapper {
 
 .news {
     &_head {
-        font-size: 20px;
+        font-size: calculateRem(20px);
         color: $dark-blue;
         font-family: OpenSansCondest, Arial, Helvetica, sans-serif;
-        padding: 8px 60px;
+        padding: calculateRem(8px) calculateRem(60px);
         background-color: #fdf6f6;
     }
     &_main {
-        padding: 37px 32px;
+        padding: calculateRem(37px) calculateRem(32px);
         border: 1px solid #dedbdb;
         @media (min-width: 769px) {
             display: flex;
@@ -391,17 +385,17 @@ main>.wrapper {
     }
     &_email {
         & > p {
-            font-size: 15px;
+            font-size: calculateRem(15px);
             color: $dark-blue;
             font-family: OpenSansCondest, Arial, Helvetica, sans-serif;
-            margin-bottom: 22px;
+            margin-bottom: calculateRem(22px);
         }
         & > input[type='text'] {
             border: 1px solid #dedbdb;
             width: 100%;
-            padding: 4px 10px;
-            border-radius: 5px;
-            margin-bottom: 30px;
+            padding: calculateRem(4px) calculateRem(10px);
+            border-radius: calculateRem(5px);
+            margin-bottom: calculateRem(30px);
         }
     }
     &_list {
@@ -419,12 +413,12 @@ main>.wrapper {
         & > li { 
             flex-basis: 43%;
             color: $dark-blue;
-            font-size: 11px;
+            font-size: calculateRem(11px);
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 700;
             position: relative;
             &:not(:last-child) {
-                margin-bottom: 17px;
+                margin-bottom: calculateRem(17px);
             }
         }
     }
@@ -435,5 +429,18 @@ main>.wrapper {
   fill: #fff;
   border-radius: 50%;
   vertical-align: middle;
-  left: -20px;
+  left: calculateRem(-20px);
+}
+.border {
+  border-radius: calculateRem(7px) calculateRem(7px) 0 0;
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: calculateRem(-3px);
+    content: "";
+    display: block;
+    height: calculateRem(3px);
+    width: 100%;
+    background-color: rgb(255, 253, 253);
+  }
 }

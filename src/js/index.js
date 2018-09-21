@@ -42,9 +42,11 @@ const tabsShow = (e) => {
     for(let i = 0; i < tabsH.length; i++) {
         if (target === tabsH[i]) {
             tabsContent[i].classList.add('tabs-show')
+            tabsH[i].classList.add('border')
         } else {
             tabsContent[i].classList.remove('tabs-show')
             tabsContent[i].classList.add('tabs-hide')
+            tabsH[i].classList.remove('border')
         }
     }
 }

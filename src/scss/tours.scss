@@ -14,7 +14,7 @@
 .tours {
     @media (min-width: 1025px) {
 
-        flex-basis: 70%;
+        flex-basis: 75%;
     }
 }
 .tours_flex{
@@ -38,28 +38,28 @@ margin-bottom: calculateRem(50px);
         flex-basis: 48%;
     }
    &-box {
-       flex-basis: 50%;
+       flex-basis: 53%;
    }
     & > img {
         flex-basis: 46%;
-        height: 155px;
+        height: calculateRem(155px);
     }
     &-box .head {
         @extend %fontArial;
         font-size: calculateRem(16px);
-        margin-bottom: calculateRem(18px);
+        margin-bottom: calculateRem(13px);
     }
     &-box .discription {
         font-family: Arial, Helvetica, sans-serif;
         font-size: calculateRem(14px);
-        margin-bottom: calculateRem(12px);
+        margin-bottom: calculateRem(10px);
     }
     &-box .price {
         font-family: Arial, Helvetica, sans-serif;
         font-size: calculateRem(18px);
         text-transform: uppercase;
         color: $color-blue;
-        margin-bottom: calculateRem(15px);
+        margin-bottom: calculateRem(10px);
     }
 }
 }
@@ -89,7 +89,7 @@ margin-bottom: calculateRem(50px);
     .select-box {
 
         & > select {
-            padding: 5px 10px;
+            padding: calculateRem(5px) calculateRem(10px);
             margin-bottom: calculateRem(57px);
             background-color: #fcfafa;
             width: 70%;
@@ -157,7 +157,7 @@ margin-bottom: calculateRem(50px);
     }
     @media (min-width: 1025px) {
         flex-direction: column;
-        flex-basis: 27%;
+        flex-basis: 24%;
         align-items: unset;
     }
 }
@@ -165,5 +165,10 @@ margin-bottom: calculateRem(50px);
     @media (min-width: 1025px) {
         display: flex;
         justify-content: space-between;
+    }
+}
+.img-holder {
+    @media (max-width: 480px) {
+        margin-right: calculateRem(15px);
     }
 }

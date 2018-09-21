@@ -1,4 +1,5 @@
 'use strict';
+
 //======================   SLIDER   ==================================
 
 var next = document.querySelector('.js-right');
@@ -41,9 +42,11 @@ var tabsShow = function tabsShow(e) {
     for (var i = 0; i < tabsH.length; i++) {
         if (target === tabsH[i]) {
             tabsContent[i].classList.add('tabs-show');
+            tabsH[i].classList.add('border');
         } else {
             tabsContent[i].classList.remove('tabs-show');
             tabsContent[i].classList.add('tabs-hide');
+            tabsH[i].classList.remove('border');
         }
     }
 };

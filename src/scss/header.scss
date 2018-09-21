@@ -4,7 +4,7 @@
     margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 50px;
+    padding-top: calculateRem(50px);
     @media (min-width: 1024px) {
         flex-wrap: nowrap;
     }
@@ -14,10 +14,8 @@
     font-size: calculateRem(20px);
     text-transform: uppercase;
     color: $color-white;
-    padding: 10px 5px;
-    &:hover .head_menu-link{
-        color: $dark-blue;
-    }
+    padding: calculateRem(10px) calculateRem(5px);
+
     @media (min-width: 768px) {
         font-size: calculateRem(24px);
     }
@@ -25,6 +23,11 @@
 .head_menu-item > a {
     color: $color-white;
     font-family: PathwayGothic, Arial, sans-serif;
+    transition: .2s linear;
+    &:hover {
+        color: $dark-blue;
+        transition: .2s linear;
+    }
 }
 .head_menu-item:nth-child(1) {
     order: 1;
@@ -61,12 +64,16 @@
 #main-link > a {
     background-color: #fff;
     border-radius: 50%;
-    padding: 43px 20px;
-    font-size: 33px;
+    padding: calculateRem(43px) calculateRem(20px);
+    font-size: calculateRem(33px);
     font-family: PathwayGothic, Arial, sans-serif;
     text-transform: uppercase;
     color: $dark-blue;
-    box-shadow: 2px 2px 15px rgb(97, 97, 97);
+    transition: .2s linear;
+    &:hover {
+        box-shadow: calculateRem(2px) calculateRem(2px) calculateRem(15px) rgb(97, 97, 97);
+        transition: .2s linear;
+    }
 }
 
 @media (max-width: 768px) {
@@ -89,9 +96,9 @@
 }
 .submenu_list {
     background-color: $color-white;
-    width: 100px;
-    padding: 10px 0;
-    border-radius: 2px;
+    width: calculateRem(100px);
+    padding: calculateRem(10px) 0;
+    border-radius: calculateRem(2px);
     text-align: center;
     font-size: calculateRem(16px);
     transition: .2s linear;
@@ -102,11 +109,11 @@
     &:nth-child(1)::before {
         display: block;
         content: "";
-        width: 10px;
-        height: 10px;
+        width: calculateRem(10px);
+        height: calculateRem(10px);
         background-color: $color-white;
         position: absolute;
-        top: -4px;
+        top: calculateRem(-4px);
         
         left: 50%;
         transform: rotate(45deg);
